@@ -206,6 +206,71 @@ for(int m = 0;m<4;m++){
     printf("Value at position %d is : %d\n",m,ptr[m]);
 }
 */
+ <-------------------------DELETING A ARRAY---------------------------->
+     
+     
+     
+ void search(int* arr,int,int);
+void sort(int*,int,int)
+void main()
+{
+   int a,j,*arr,n,del,choose;
+   printf("Enter the number of Blocks you want :\t");
+    scanf("%d",&n);
+  arr = (int*)calloc(n,sizeof(int));
+  for(int i = 0;i<n;i++)
+    {
+    scanf("%d",&arr[i]);
+    }
+    // delete any element
+   printf("Enter the index of element you want to delete :\t");
+   scanf("%d",&del);
+   for (int j = 0; j < n; j++) {
+       if(j==del){
+           arr[j]=arr[j+1];
+           del = del + 1;
+       }
+       arr[n-1] = 999;
+   }
+   for(int m = 0;m<n;m++){
+    printf("Value at position %d is : %d\n",m,arr[m]);
+    }
+    
+    printf("Enter the element you want to searc :\t");
+   scanf("%d",&choose); 
+    
+    switch (choose)
+    {
+        case 1:
+                printf("Enter the element you want to search :\t");
+                scanf("%d",&a); 
+                j = 10;
+                search(arr,n,a);
+                break;
+        case 2:
+                printf("maximum element is :\t");
+                sort(arr,n)
+                break;
+    }
+   
+}
+void search(int* arr,int len,int search){
+    int flag = 0,s;
+    for (int i = 0; i < len; i++)
+    {
+        if (arr[i]==search){
+            flag = 1;
+        }
+        else{
+            flag=0;
+        }
+        if(flag==1){
+                printf("your search elemnt is present at : %d\n",i);
+        }
+        
+    }
+    
+}
 
 
 
