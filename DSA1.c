@@ -149,5 +149,64 @@ void search(int* arr,int len,int search){
     
 }*/
 
+/*<------------------------------ DSA2------------------------------>
+#include<stdio.h>
+#include<stdlib.h>
+/*void main(){
+int *ptr;
+int n;
+printf("Enter the number of Blocks you want");
+scanf("%d",&n);
+ptr = (int*)malloc(n*sizeof(int));
+for(int i = 0;i<n;i++){
+    scanf("%d",&ptr[i]);
+}
+for(int j = 0;j<n;j++){
+    printf("Value at position %d is : %d\n",j,ptr[j]);
+}
+}*/
+
+// calloc use : ptr = (cast-type*)calloc(n, element-size);
+
+
+/*void main(){
+int *ptr;
+int n;
+printf("Enter the number of Blocks you want");
+scanf("%d",&n);
+ptr = (int*)calloc(n,sizeof(int));
+for(int i = 0;i<n;i++){
+    scanf("%d",&ptr[i]);
+}
+for(int j = 0;j<n;j++){
+    printf("Value at position %d is : %d\n",j,ptr[j]);
+}
+}*/
+
+// Realloc use ptr = realloc(ptr, newSize);
+
+
+/*void main(){
+int *ptr;
+int n;
+printf("Enter the number of Blocks you want");
+scanf("%d",&n);
+ptr = (int*)calloc(n,sizeof(int));
+for(int i = 0;i<n;i++){
+    scanf("%d",&ptr[i]);
+}
+for(int j = 0;j<n;j++){
+    printf("Value at position %d is : %d\n",j,ptr[j]);
+}
+ptr = realloc(ptr,4*sizeof(int));
+for(int l = 0;l<4;l++){
+    scanf("%d",&ptr[l]);
+}
+for(int m = 0;m<4;m++){
+    printf("Value at position %d is : %d\n",m,ptr[m]);
+}
+*/
+
+
 
 
